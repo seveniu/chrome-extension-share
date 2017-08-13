@@ -1,0 +1,17 @@
+{
+  "name": "share",
+  "description": "share current tab to sns",
+  "version": "1.0",
+  "permissions": [
+    "tabs", "system.display", "http://*/*", "https://*/*"
+  ],
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "browser_action": {
+      "default_title": "share current tab to sns",
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
