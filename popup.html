@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <title>Set Page Color Popup</title>
+    <link rel="stylesheet" href="iconfont.css">
     <style>
     body {
       overflow: hidden;
       margin: 0px;
-      padding: 0px;
+      padding: 5px 0;
       background: white;
       font-family:'Microsoft Yahei',tahoma,arial,"Hiragino Sans GB",\5b8b\4f53;
     }
 
     .share-item {
       cursor: pointer;
-      line-height: 1;
       white-space: nowrap;
       cursor: pointer;
       background: #fff;
@@ -24,9 +24,23 @@
       box-sizing: border-box;
       outline: none;
       color: #333;
-      margin: 10px;
-      padding: 8px 10px;
+      margin: 5px 10px;
+      padding: 0 10px 0 37px;
       border-radius: 3px;
+      height: 34px;
+      line-height: 34px;
+      position: relative;
+    }
+    .share-item i {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      border: 1px solid #333;
+      border-radius: 50%;
+      line-height: 22px;
+      position: absolute;
+      top: 4px;
+      left: 10px;
     }
     .share-item-qr img,.share-item-qr canvas{
       margin:0 auto;
@@ -35,20 +49,83 @@
       background: #20a0ff;
       color: #fff;
     }
+    .share-item .icon-weibo {
+      color: #ff763b;
+      border-color: #ff763b;
+    }
+    .share-item:hover .icon-weibo {
+      background-color: #ff763b;
+    }
+    .share-item .icon-weixin {
+      color: #7bc549;
+      border-color: #7bc549;
+    }
+    .share-item:hover .icon-weixin {
+      background-color:  #7bc549;
+    }
+    .share-item .icon-douban {
+      color: #33b045;
+      border-color: #33b045;
+    }
+    .share-item:hover .icon-douban {
+      background-color: #33b045;
+    }
+    .share-item .icon-qq {
+      color: #56b6e7;
+      border-color: #56b6e7;
+      line-height: 20px;
+    }
+    .share-item:hover .icon-qq {
+      background-color:  #56b6e7;
+    }
+    .share-item .icon-qqkongjian {
+      color: #FDBE3D;
+      border-color: #FDBE3D;
+      line-height: 19px;
+    }
+    .share-item:hover .icon-qqkongjian {
+      background-color:  #FDBE3D;
+    }
+    .share-item .icon-twitter {
+      color: #55acee;
+      border-color: #55acee;
+    }
+    .share-item:hover .icon-twitter {
+      background-color: #55acee;
+    }
+    .share-item .icon-facebook {
+      color: #44619D;
+      border-color: #44619D;
+    }
+    .share-item:hover .icon-facebook {
+      background-color: #44619D;
+    }
+    .share-item .icon-google {
+      color: #db4437;
+      border-color: #db4437;
+    }
+    .share-item:hover .icon-google {
+      background-color: #db4437;
+    }
+    .share-item:hover i {
+      color: #fff;
+    }
+
     </style>
     <script src="share.js"></script>
     <script src="qrcode.js"></script>
     <script src="popup.js"></script>
+    <link rel="stylesheet" href="iconfont.css">
   </head>
   <body>
-    <div id="weibo" class="share-item">微博</div>
-    <div id="wechat" class="share-item">微信</div>
+    <div id="weibo" class="share-item"><i class="iconfont icon-weibo"></i>微博</div>
+    <div id="wechat" class="share-item"><i class="iconfont icon-weixin"></i>微信</div>
     <div id="wechatQrcode" class="share-item-qr"></div>
-    <div id="douban" class="share-item">豆瓣</div>
-    <div id="qq" class="share-item">QQ</div>
-    <div id="qzone" class="share-item">QQ空间</div>
-    <div id="twitter" class="share-item">Twitter</div>
-    <div id="facebook" class="share-item">Facebook</div>
-    <div id="google" class="share-item">Google Plus</div>
+    <div id="douban" class="share-item"><i class="iconfont icon-douban"></i>豆瓣</div>
+    <div id="qq" class="share-item"><i class="iconfont icon-qq"></i>QQ</div>
+    <div id="qzone" class="share-item"><i class="iconfont icon-qqkongjian"></i>QQ空间</div>
+    <div id="twitter" class="share-item"><i class="iconfont icon-twitter"></i>Twitter</div>
+    <div id="facebook" class="share-item"><i class="iconfont icon-facebook"></i>Facebook</div>
+    <div id="google" class="share-item"><i class="iconfont icon-google"></i>Google Plus</div>
   </body>
 </html>
