@@ -1,0 +1,1 @@
+zip pack.zip ./*
