@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title>Set Page Color Popup</title>
     <style>
     body {
@@ -8,40 +9,32 @@
       margin: 0px;
       padding: 0px;
       background: white;
+      font-family:'Microsoft Yahei',tahoma,arial,"Hiragino Sans GB",\5b8b\4f53;
     }
 
     div:first-child {
       margin-top: 0px;
     }
 
-    div {
+    .share-item {
       cursor: pointer;
+      line-height: 1;
+      white-space: nowrap;
+      cursor: pointer;
+      background: #fff;
+      border: 1px solid #20a0ff;
+      -webkit-appearance: none;
       text-align: center;
-      padding: 1px 3px;
-      font-family: sans-serif;
-      font-size: 0.8em;
-      width: 100px;
-      margin-top: 1px;
-      background: #cccccc;
+      box-sizing: border-box;
+      outline: none;
+      color: #333;
+      margin: 10px;
+      padding: 10px 15px;
+      border-radius: 3px;
     }
-    div:hover {
-      background: #aaaaaa;
-    }
-    #red {
-      border: 1px solid red;
-      color: red;
-    }
-    #blue {
-      border: 1px solid blue;
-      color: blue;
-    }
-    #green {
-      border: 1px solid green;
-      color: green;
-    }
-    #yellow {
-      border: 1px solid yellow;
-      color: yellow;
+    .share-item:hover {
+      background: #20a0ff;
+      color: #fff;
     }
     </style>
     <script src="share.js"></script>
@@ -49,14 +42,14 @@
     <script src="popup.js"></script>
   </head>
   <body>
-    <div id="weibo">微博</div>
-    <div id="wechat">微信</div>
+    <div id="weibo" class="share-item">微博</div>
+    <div id="wechat" class="share-item">微信</div>
     <div id="wechatQrcode"></div>
-    <div id="douban">豆瓣</div>
-    <div id="qq">QQ</div>
-    <div id="qzone">QQ空间</div>
-    <div id="twitter">Twitter</div>
-    <div id="facebook">Facebook</div>
-    <div id="google">Google Plus</div>
+    <div id="douban" class="share-item">豆瓣</div>
+    <div id="qq" class="share-item">QQ</div>
+    <div id="qzone" class="share-item">QQ空间</div>
+    <div id="twitter" class="share-item">Twitter</div>
+    <div id="facebook" class="share-item">Facebook</div>
+    <div id="google" class="share-item">Google Plus</div>
   </body>
 </html>
