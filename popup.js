@@ -41,6 +41,7 @@ function createWindow(url, width, height) {
 
 function createWechat(url, width, height) {
   var wechatQrcode = document.getElementById("wechatQrcode");
+    wechatQrcode.innerHTML = '';
   new QRCode(wechatQrcode, {text: url, width: width, height: height});
   wechatQrcode.style.display = "block";
 }
