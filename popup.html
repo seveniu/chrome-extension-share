@@ -12,10 +12,6 @@
       font-family:'Microsoft Yahei',tahoma,arial,"Hiragino Sans GB",\5b8b\4f53;
     }
 
-    div:first-child {
-      margin-top: 0px;
-    }
-
     .share-item {
       cursor: pointer;
       line-height: 1;
@@ -29,8 +25,11 @@
       outline: none;
       color: #333;
       margin: 10px;
-      padding: 10px 15px;
+      padding: 8px 10px;
       border-radius: 3px;
+    }
+    .share-item-qr img,.share-item-qr canvas{
+      margin:0 auto;
     }
     .share-item:hover {
       background: #20a0ff;
@@ -44,7 +43,7 @@
   <body>
     <div id="weibo" class="share-item">微博</div>
     <div id="wechat" class="share-item">微信</div>
-    <div id="wechatQrcode"></div>
+    <div id="wechatQrcode" class="share-item-qr"></div>
     <div id="douban" class="share-item">豆瓣</div>
     <div id="qq" class="share-item">QQ</div>
     <div id="qzone" class="share-item">QQ空间</div>
